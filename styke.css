@@ -47,6 +47,20 @@ h1 {
 .bold-orange {
     color: var(--orange);
 }
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+  }
+.fade-in { 
+    animation: fadeIn 2s; 
+}
+.fade-in-2 { 
+    animation: fadeIn 8s; 
+}
 /* Fin de réglage d'ensemble */
 .navbar, main, .footer {
     width: 70%;
@@ -107,9 +121,11 @@ article {
 .card-btn {
     background-color: var(--black);
     text-align: center;
+    transition: 0.5s;
 }
 .card-btn:hover{
     background-color: var(--orange);
+    box-shadow: var(--grey-white) 0px 5px 15px;
 }
 .card-btn a {
     display: block;
