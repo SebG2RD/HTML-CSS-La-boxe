@@ -1,1 +1,15 @@
-    
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --orange :#ea9f06;
+    --grey :#373737;
+    --black:#1c1c1c;
+    --off-white: #f3f3f3;
+    --white : #ffffff
+}
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
