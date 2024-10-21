@@ -73,23 +73,61 @@ main {
     background-color: var(--off-white);
 }
 article {
-    padding: 3rem 8rem;
+    padding: 3rem 8rem 10rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+.card {
+    margin: 2rem 0;
+}
 .card h2 {
     text-align: center;
     font-size: 1.2rem;
+    position: relative;
+    top: -2.5rem;
 }
+.card-promo {
+    padding: 1rem;
+    color: var(--orange);
+    background-color: var(--black);
+    font-size: 2rem;
+    width: 8rem;
+    border-radius: 2rem;
+    position: relative;
+    top: -24rem;
+    left: 18rem;
+}
+
 .card-btn {
     background-color: var(--black);
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
 }
 .card-btn a {
     text-decoration: none;
     color: var(--off-white);
+}
+.card-action {
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+.card-action li {
+    width: 100%;
+    
+}
+.card-action ul {
+    justify-content: space-around;
+    font-size: 1.8rem;
+    font-weight: 600;
+    gap: 1rem;
+}
+.card-prix {
+    text-decoration: line-through;
+}
+.card-solde {
+    color: var(--orange);
 }
 
 
@@ -131,4 +169,36 @@ footer {
 footer {
     text-align: center;
     color: var(--off-white);
+}
+
+@media (width < 576px) {
+    body {
+        background-color: red;
+    }
+    .navbar, main, .footer {
+        width: 90%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    article {
+        padding: 3rem;
+    }
+    .contact ul {
+        width: 90%;
+        font-size: 0.8rem;
+        margin: -5% auto;
+    }
+    
+    .navbar-right ul:last-child {
+        align-items: flex-start
+    }
+    .icon {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .icon li {
+        width: 45%;
+    }
 }
