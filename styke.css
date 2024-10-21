@@ -35,6 +35,13 @@ h1, h2 h3 {
 p, a, li {
     font-family: "Oswald", sans-serif;
 }
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+a:hover{
+    color: var(--orange);
+}
 h1 {
     font-size: 1.2rem;
 }
@@ -52,7 +59,7 @@ h1 {
 .navbar-right .navbar-name {
     font-size: 1.8rem;
 }
-.navbar-right ul:last-child {
+.navbar-right ul {
     align-items: flex-end;
 }
 .navbar, .navbar-right ul {
@@ -92,10 +99,11 @@ article {
     background-color: var(--black);
     font-size: 2rem;
     width: 8rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     position: relative;
     top: -24rem;
     left: 18rem;
+    font-weight: 700;
 }
 
 .card-btn {
@@ -104,14 +112,17 @@ article {
     padding: 0.5rem 2rem;
 }
 .card-btn a {
-    text-decoration: none;
     color: var(--off-white);
+}
+.card-btn a:hover {
+    color: var(--orange);
 }
 .card-action {
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
-    margin-top: -5rem;
+    margin-top: -4rem;
+    padding: 0 1rem;
 }
 .card-action li {
     width: 100%;
@@ -119,12 +130,13 @@ article {
 }
 .card-action ul {
     justify-content: space-around;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     gap: 1rem;
 }
 .card-prix {
     text-decoration: line-through;
+    text-decoration-color: var(--grey-white);
 }
 .card-solde {
     color: var(--orange);
@@ -142,7 +154,6 @@ article {
     border-radius: 1rem;
 }
 .contact ul a {
-    text-decoration: none;
     margin: 1rem;
     color: var(--grey);
    
@@ -158,7 +169,10 @@ footer {
 .icon {
     padding: 2rem 0;
     border-bottom: 2px solid var(--grey-white);
-    gap: 2rem;
+    gap: 4rem;
+}
+.icon li {
+    padding: 0 1rem;
 }
 .media-sociaux {
     justify-content: center;
@@ -171,18 +185,37 @@ footer {
     color: var(--off-white);
 }
 
-@media (width < 576px) {
+@media (max-width: 576px) {
     body {
-        background-color: red;
+        background-color: var(--black);
     }
     .navbar, main, .footer {
         width: 90%;
     }
+    nav {
+        padding: 2rem 0 1rem;
+    }
     .navbar {
         flex-direction: column;
+        gap: 2rem;
+    }
+    .navbar-left ul {
+        align-items: center;
+    }
+    .navbar-right {
+        width: 100%;
+    }
+    .navbar-right ul {
+        align-items: flex-start;
+        width: 100%;
+        gap: 2rem;
+    }
+    .navbar-menu {
+        width: 100%;
+        justify-content: space-around;
     }
     article {
-        padding: 3rem;
+        padding: 4rem;
     }
     .contact ul {
         width: 90%;
@@ -190,15 +223,15 @@ footer {
         margin: -5% auto;
     }
     
-    .navbar-right ul:last-child {
-        align-items: flex-start
-    }
     .icon {
-        width: 100%;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
     }
     .icon li {
         width: 45%;
+        font-size: 0.8rem;
+        padding: 0;
     }
 }
