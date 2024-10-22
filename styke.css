@@ -117,7 +117,6 @@ article {
     left: 18rem;
     font-weight: 700;
 }
-
 .card-btn {
     background-color: var(--black);
     text-align: center;
@@ -238,7 +237,6 @@ footer {
         font-size: 0.8rem;
         margin: -5% auto;
     }
-    
     .icon {
         flex-wrap: wrap;
         flex-direction: row;
