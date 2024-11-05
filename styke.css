@@ -196,9 +196,6 @@ footer {
     color: var(--off-white);
 }
 @media (max-width: 576px) {
-    body {
-        background-color: var(--black);
-    }
     .navbar, main, .footer {
         width: 90%;
     }
