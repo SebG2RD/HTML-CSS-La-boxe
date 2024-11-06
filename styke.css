@@ -181,6 +181,11 @@ footer {
     padding: 2rem 0;
     gap: 4rem;
 }
+hr {
+    background-color: var(--grey-white);
+    height: 3px;
+    border: none;
+}
 .icon li {
     padding: 0 1rem;
 }
