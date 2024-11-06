@@ -179,7 +179,6 @@ footer {
 }
 .icon {
     padding: 2rem 0;
-    border-bottom: 2px solid var(--grey-white);
     gap: 4rem;
 }
 .icon li {
